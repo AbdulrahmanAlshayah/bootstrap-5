@@ -1,0 +1,119 @@
+/*Start Landig*/
+.landing {
+  background-color: $darkColor;
+  min-height: calc(100vh - 72px);
+}
+/*End Landig*/
+/*Start Features*/
+.features {
+  .icon-holder {
+    height: 200px;
+    svg {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .number {
+      font-size: 12rem;
+      color: $sectionColor ;
+    }
+    .icon {
+      color: $greenColor;
+    }
+  }
+  .feat {
+    h4 {
+      color: $yellowColor;
+    }
+  }
+}
+/* End Features */
+
+/* Start Our Work */
+.our-work{
+  background: $sectionColor;
+  ul {
+    .active {
+    background: $redColor;
+    color: $yellowColor;
+    }
+    li {
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    li:not(.active):hover {
+      color: $redColor;
+    }
+  }
+  .box {
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: attr(data-work);
+      position: absolute;
+      background: rgba($greenColor, 0.7);
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+      transition: 0.3s;
+      transform: translateX(calc(-100% - 5px));
+    }
+    &:hover::before{
+      transform: translateX(0);
+    }
+  }
+}
+/* End Our Work */
+/* Start Stuff */
+.stuff {
+  .desc {
+    max-width: 500px;
+  }
+}
+/* End Stuff */
+
+/* Start Our Team */
+.team {
+  background: $sectionColor;
+  h2 {
+    color: $yellowColor;
+  }
+  .box {
+    h4 {
+      background-color: $greenColor;
+    }
+  }
+}
+/* End Our Team */
+/* Start Project */
+.project {
+  background: $darkColor;
+}
+/* End Project */
+
+/* Start Subscripe */
+.subscribe {
+  background-color: $yellowColor;
+  input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: white;
+    }
+  }
+  input[type="submit"] {
+    background: $darkColor;
+    color: $yellowColor;
+    
+  }
+}
+/* End Subscripe */

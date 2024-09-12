@@ -1,0 +1,8 @@
+.main-btn {
+  background-color: $redColor;
+  color: $yellowColor;
+  padding: 0.5rem 1rem;
+  &:hover {
+  color: $yellowColor;
+  }
+}

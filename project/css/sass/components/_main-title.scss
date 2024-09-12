@@ -1,0 +1,10 @@
+.main-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -20;
+  width: 120px;
+  height: 2px;
+  background-color: $greenColor;
+  transform: translateX(-50%);
+}

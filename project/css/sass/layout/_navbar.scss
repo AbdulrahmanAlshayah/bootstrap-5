@@ -1,0 +1,31 @@
+.navbar {
+  background-color: $darkColor;
+}
+.navbar {
+  .navbar-nav {
+    .nav-link {
+      color: white;
+      .active,&:hover,&:focus {
+        color: $greenColor;
+      }
+    }
+
+  }
+  .search {
+    border-left: 1px solid $greenColor;
+    svg {
+      color: $greenColor;
+    }
+  }
+  .navbar-toggler {
+    color: white;
+    font-size: 20px;
+    border-color: white;
+    &:focus {
+      box-shadow: none;
+    }
+    &[aria-expanded="true"] {
+      border-color: $greenColor;
+    }
+  }
+}
